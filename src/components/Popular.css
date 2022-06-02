@@ -1,0 +1,66 @@
+.popular-con {
+    width: 400%;
+}
+
+.popular-slide {
+    display: flex;    
+}
+
+.popular-slide img {
+    position: relative;
+    width: 25%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.first {
+    transition: 1s ease;
+    margin-left: 0%;
+}
+
+.popular-slide input {
+    display: none;
+}
+
+.radio-menus {
+    position: absolute;
+    margin-top: 175px;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.radio-bth {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio1:checked ~ .radio-menus label[for="radio1"] {
+    background-color: white;
+}
+#radio2:checked ~ .radio-menus label[for="radio2"] {
+    background-color: white;
+}
+#radio3:checked ~ .radio-menus label[for="radio3"] {
+    background-color: white;
+}
+#radio4:checked ~ .radio-menus label[for="radio4"] {
+    background-color: white;
+}

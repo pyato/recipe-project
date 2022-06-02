@@ -1,0 +1,21 @@
+.search-text {
+    text-align: center;
+    margin: 1rem;
+}
+
+.search-text input {
+    padding: 10px;
+    width: 75%;
+    border: 2px solid #CECECE;
+    border-radius: 100px;
+}
+
+.search-bth-con {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.search-bth-con div:not(:nth-last-child(1)) {
+    padding-right: 30px;
+}

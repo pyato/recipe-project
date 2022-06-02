@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.content-con {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.head-topic {
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-topic {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #CECECE;
+}

@@ -1,0 +1,44 @@
+.weekly-con {
+    display: flex;
+}
+
+.weekly-con img {
+    width: 40%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.weekly-text {
+    width: 60%;
+    height: 250px;
+    background-color: #F1F1F1;
+}
+
+.weekly-text p:nth-child(1) {
+    color: #57B87D;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weekly-text p:nth-child(2) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 150px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 420px) {
+    .weekly-con {
+        display: block;
+    }
+
+    .weekly-con img {
+        width: 100%;
+    }
+
+    .weekly-text {
+        width: 100%;
+        overflow: hidden;
+    }
+}

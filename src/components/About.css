@@ -1,0 +1,23 @@
+.about-con {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.about-text:not(:nth-last-child(1)) {
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 420px) {
+    .about-con {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .about-text {
+        margin: 30px 50px 0 50px;
+    }
+}

@@ -1,0 +1,64 @@
+.Navbar-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li:not(:nth-last-child(1)) {
+    margin-right: 1rem;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .mobile-menu {
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .menu {
+        position: absolute;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        top: 30px;
+        background-color: white;
+        top: -100%;
+        transition: 1s ease;
+    }
+
+    .menu.activate {
+        top: 30px;
+        transition: .35s ease;
+    }
+
+    .menu li:not(:nth-last-child(1)) {
+        margin-right: 0;
+    }
+    
+    .menu li {
+        padding: 5px;
+    }
+}

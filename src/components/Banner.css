@@ -1,0 +1,51 @@
+.banner-img {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.banner-text-con {
+    max-width: 1350px;
+    height: 300px;
+    margin: 0 auto;
+    line-height: 1px;
+}
+
+.banner-text-con p:nth-child(1) {
+    margin-top: 4rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.banner-text-con p:nth-child(2) {
+    color: #57B87D;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-text-con button {
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 100px;
+    color: white;
+    background-color: unset;
+}
+
+.banner-text-con button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+    .banner-text-con p:nth-child(1) {
+        font-size: 2rem;
+    }
+    
+    .banner-text-con p:nth-child(2) {
+        font-size: 3rem;
+    }
+}
